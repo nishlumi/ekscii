@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0",
+  "name": "ekscii",
+  "description": "Easily search and find, get web curation app.",
+  "launch_path": "/index.html",
+  "default_locale": "en",
+  "icons": {
+    "16": "/img/icons/icon_ekscii016.png",
+    "32": "/img/icons/icon_ekscii032.png",
+    "48": "/img/icons/icon_ekscii048.png",
+    "60": "/img/icons/icon_ekscii060.png",
+    "64": "/img/icons/icon_ekscii064.png",
+    "84": "/img/icons/icon_ekscii084.png",
+    "96": "/img/icons/icon_ekscii096.png",
+    "108": "/img/icons/icon_ekscii108.png",
+    "126": "/img/icons/icon_ekscii126.png",
+    "128": "/img/icons/icon_ekscii128.png",
+    "142": "/img/icons/icon_ekscii142.png",
+    "144": "/img/icons/icon_ekscii144.png",
+    "189": "/img/icons/icon_ekscii189.png",
+    "256": "/img/icons/icon_ekscii256.png",
+    "284": "/img/icons/icon_ekscii284.png",
+    "512": "/img/icons/icon_ekscii512.png"
+  },
+  "developer": {
+    "name": "ISHII Eiju",
+    "url": "http://www8.plala.or.jp/lumidina/"
+  },
+  "type": "privileged",
+  "permissions": {
+    "systemXHR": {
+      "description": "Required to load remote content"
+    },
+    "storage" : {
+      "description" : "Required to save curation content"
+    }
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "locales": {
+    "ja": {
+      "name": "ekscii",
+      "description": "お手軽検索、トレンド記事取得アプリ",
+      "permissions": {
+        "systemXHR": {
+          "description": "ネット上のコンテンツの読み込みでこの権限が必要です"
+        },
+        "storage" : {
+          "description" : "取得したコンテンツを保存するのに必要です。"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="A privileged app stub">
+
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="shared/style/headers.css">
+        <!--<link rel="stylesheet" href="shared/style/buttons.css">-->
+        <link rel="stylesheet" href="shared/style/input_areas.css">
+        <link rel="stylesheet" href="shared/style/toolbars.css">
+        <link rel="stylesheet" href="shared/style/lists.css">
+        <link rel="stylesheet" href="shared/elements/gaia-icons/gaia-icons-embedded.css">
+        <link rel="stylesheet" href="css/app.css">
+        
+        <link rel="prefetch" type="application/l10n" href="data/locales.ini" />
+        <script type="text/javascript" src="js/libs/l10n.js" defer></script>
+        <script type="text/javascript" src="js/libs/jsOAuth-1.3.7.js" defer></script>
+        <script type="text/javascript" src="js/libs/jquery-2.1.0.min.js" defer></script>
+    </head>
+    <body role="application">
+       <section id="sidebar" role="sidebar">
+          <header>              
+          </header>
+          <nav>
+             <a href="#" id="btn_setting_back"><span class="icon icon-back">hide sidebar</span></a>
+          </nav>
+          <div class="setting-panel">
+             <section data-type="list">
+                <ul id="setting_list">
+                    <li>
+                        <label><select id="set_article_num">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                        </select>
+                        <strong id="lab_set_article_num" data-l10n-id="lab_article_num">記事の取得数</strong></label>
+                    </li>
+                </ul>
+             </section>
+          </div>
+        </section>
+
+        <section id="drawer" role="region">
+            <header id="sec_header">
+                <a href="#sidebar"><span class="icon icon-menu">show sidebar</span></a>
+                <strong id="free_title"></strong>
+                <div class="header-right">
+                   <a href="#"><span class="icon icon-clear">reload</span></a>
+                </div>
+                
+
+            </header>
+            <div role="main">
+            	<section role="activity">
+	                <div id="actv_common" class="activity-option hidden">
+	                        <form id="frm_search" role="search" class="skin-dark">
+	                                <button type="submit" id="btn_search">&#9166;</button>
+	                            <p>
+	                                <input type="search" placeholder="Some word or phrase..." id="txt_findtext" />
+	                                <button type="reset">Clear</button>
+	                            </p>
+	                        </form>
+	                    <p id="error" hidden>...</p>
+	                </div>
+            		<div id="actv_main" class="activity current-activity">
+	                    <div id="box_panel1st">
+	                        <button id="pnl_qanda" class="panelbtn1st"><b data-l10n-id="lab_qanda">質問する</b></button>
+	                        <button id="pnl_curation" class="panelbtn1st"><b data-l10n-id="lab_curation">ニュース検索</b></button>
+	                    </div>
+            		</div>
+            		<div id="actv_askmode" class="activity wait-activity">
+                        <div id="askphrase"></div>
+	                    <div id="askresults">
+	                    </div>
+            		</div>
+            		<div id="actv_newsmode" class="activity wait-activity">
+                        <div id="newscategories_space">
+                            <section data-type="list">
+                                <ul id="news_categories"></ul>
+                            </section>
+                        </div>
+                        <div id="newsfeed_space" class="effect_none">
+                            <div id="news_feeds"></div>
+                        </div>
+                        <div id="newsrelated_space" class="effect_none">
+                            <div id="news_related"></div>
+                        </div>
+            		</div>
+            	</section>
+                <footer>
+                    <div id="sec_footer" role="toolbar">
+                        <button id="btn_appreturn" data-icon="back">back</button>
+                        <button id="btn_appreload" data-icon="reload">reload</button>
+                        <section id="btn4selected" class="btn4selected-none">
+                            <button id="btn_appshare" data-icon="share">share</button>
+                            <button id="btn_appopen" data-icon="browsing">open</button>
+                        </section>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </body>
+    <script type="text/javascript" src="js/docomoapi.js"></script>
+    <script type="text/javascript" src="js/flickobj.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</html>

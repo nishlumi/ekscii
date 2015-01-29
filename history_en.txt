@@ -1,0 +1,9 @@
+Ekscii Update history
+============
+* I referred to in () for the platform affected especially.
+
+
+Ekscii (1.0.0.0)
+*First Release
+-- ISHII Eiju <lumidina@gmail.com> 
+Firefox OS		- 2015/01/29 22:00:00
